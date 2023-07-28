@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'portfolio/css/reset.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'portfolio/css/main.css' %}">
+    <script src="{% static 'portfolio/js/main.js' %}" defer></script>
+
+    <title>Aryan Chegini</title>
+  </head>
+  <body class="container">
+    <div class="header">
+      <ul class="navbar">
+        <li class="nav-item"><a href="{% url 'portfolio-home' %}">Home</a></li>
+        <li class="nav-item"><a href="{% url 'portfolio-about' %}">About</a></li>
+        <li class="nav-item"><a href="{% url 'portfolio-projects' %}">Projects</a></li>        
+      </ul>
+    </div>
+    <div class="main">{% block content %}{% endblock %}</div>
+  </body>
+</html>

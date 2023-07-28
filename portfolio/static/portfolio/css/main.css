@@ -1,0 +1,86 @@
+@font-face {
+  font-family: playfairdisplayRegular;
+  src: url(../fonts/PlayfairDisplay-Regular.ttf);
+}
+
+* {
+  color: #213555;
+  font-family: playfairdisplayRegular!important;
+  word-spacing: 7px;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  margin : 0 ;
+  padding : 0 ;
+  background-color : whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #F5EFE7;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  font-size: larger;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.pic {
+  border-radius: 50%;
+  width: 180px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#name {
+  font-size: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+div#links a {
+  color: #213555;
+}
+
+#description {
+  max-width: 480px;
+  text-align: justify;
+  text-justify: auto;
+  display: flex;
+  margin: 0 30px 0 30px;
+  line-height: 20px;
+}
